@@ -7,7 +7,7 @@ const Navbar = () => {
 				<h1>Dictionary App</h1>
 			</div>
 			<div className='links'>
-				<div><NavLink to="/">Home</NavLink></div>
+				<div><NavLink to="/home">Home</NavLink></div>
 				<div><NavLink to="/history">History</NavLink></div>
 			</div>
 		</div>
