@@ -1,20 +1,21 @@
-import React from 'react'
-import Home from './Components/Home.js'
-import History from './Components/History.js'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home.js';
+import History from './Components/History.js';
 import Navbar from './Components/Navbar.js';
-import { Routes, Route } from "react-router-dom";
-
+ 
 const App = () => {
   return (
     <div>
-
-      <Navbar/>
-      <Routes>
-          <Route path='/home' element={<Home/>} />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/history' element={<History />} />
-      </Routes>
+        </Routes>
+      </Router>
     </div>
-  )
+  );
 }
-
-export default App
+ 
+export default App;
